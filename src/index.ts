@@ -5,7 +5,73 @@ import { Routes } from "./routes";
 import * as cors from 'cors'
 
 export const storage = {
-    users: []
+    users: [
+        {
+          "id": 1,
+          "avatar": "http://img_store/test_user_1.img",
+          "username": "Test User 1",
+          "images": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRsP_Hj8LrD32X_EdwffUExSMAXavT-SBFHKTRepuTCx83AcJr5",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRsP_Hj8LrD32X_EdwffUExSMAXavT-SBFHKTRepuTCx83AcJr5"
+          ]
+        },
+        {
+          "id": 2,
+          "avatar": "http://img_store/test_user_2.img",
+          "username": "Test User 2",
+          "images": []
+        },
+    ],
+    messages: [
+        {
+            "id":1,
+            "text": "Hello world!",
+            "user_id": 1,
+            "datetime": "2019/08/19 16:01:37"
+        },
+        {
+            "id":2,
+            "text": "Wassup!",
+            "user_id": 1,
+            "datetime": "2019/08/19 16:01:37"
+        },
+        {
+            "id":3,
+            "text": "This is delicious!",
+            "user_id": 2,
+            "datetime": "2019/08/19 16:01:37"
+        },
+        {
+            "id":4,
+            "text": "Yo!!!",
+            "user_id": 3,
+            "datetime": "2019/08/19 16:01:37"
+        },
+        {
+            "id":5,
+            "text": "Aloha!",
+            "user_id": 2,
+            "datetime": "2019/08/19 16:01:37"
+        },
+        {
+            "id":6,
+            "text": "Lorem ipsum!",
+            "user_id": 3,
+            "datetime": "2019/08/19 16:01:37"
+        },
+        {
+            "id":7,
+            "text": "Cogito ergo sum!",
+            "user_id": 1,
+            "datetime": "2019/08/19 16:01:37"
+        },
+        {
+            "id":8,
+            "text": "Javascript rocks!",
+            "user_id": 4,
+            "datetime": "2019/08/19 16:01:37"
+        },
+    ]
 }
 
 export const srcPath = __dirname
